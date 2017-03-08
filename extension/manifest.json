@@ -13,10 +13,10 @@
   },
 
   "icons": {
-    "24": "icons/json-ld-data-24.png",
-    "32": "icons/json-ld-data-32.png",
-    "48": "icons/json-ld-data-48.png",
-    "64": "icons/json-ld-data-64.png"
+    "24": "icons/logo-24.png",
+    "32": "icons/logo-32.png",
+    "48": "icons/logo-48.png",
+    "64": "icons/logo-64.png"
   },
 
   "background": {
@@ -24,7 +24,7 @@
   },
 
   "browser_action": {
-    "default_icon": "icons/json-ld-data-32.png",
+    "default_icon": "icons/logo-32.png",
     "default_title": "Treble the triples",
     "default_popup": "popup.html"
   },
