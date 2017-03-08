@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="semantic/semantic.min.css" />
+
+<style>
+body {
+  min-width: 500px;
+  min-height: 500px;
+}
+textarea {
+  border: 0;
+  width: 100%;
+  position: absolute;
+  top: 3.1em; /* hrm... */
+  bottom: 0;
+}
+</style>
+
+<div class="ui fluid two item tabular menu">
+  <a class="active item" data-tab="jsonld">JSON-LD</a>
+  <a class="item" data-tab="turtle">Turtle</a>
+</div>
+<div class="ui active tab" data-tab="jsonld">
+  <textarea id="jsonld"></textarea>
+</div>
+<div class="ui tab" data-tab="turtle">
+  <textarea id="turtle"></textarea>
+</div>
+
+<script src="semantic/jquery-3.1.1.min.js"></script>
+<script src="semantic/tab.min.js"></script>
+<script src="popup.js"></script>
