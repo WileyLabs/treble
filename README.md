@@ -17,6 +17,8 @@ Additionally, the top-right corner browser action button allows you to view the
 JSON-LD as well as other text formats (Turtle, etc.) of this graph-based data
 hiding in the web pages you visit.
 
+![screenshot](screenshot.png)
+
 ## Usage
 
 Right now (as this isn't published in any of the various browser add-on sites),
