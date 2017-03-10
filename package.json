@@ -2,11 +2,12 @@
   "name": "treble",
   "version": "0.0.1",
   "description": "Treble extracts triples from the Web while you browse.",
+  "repository": "WileyLabs/treble",
   "main": "null",
   "scripts": {
     "build": "npm run build:js-collect && npm run build:js-download",
-    "build:js-collect": "browserify src/collect.js -t babelify --outfile extension/lib/collect.js",
-    "build:js-download": "browserify src/download.js -t babelify --outfile extension/lib/download.js",
+    "build:js-collect": "browserify -s collect src/collect.js -t babelify --outfile extension/lib/collect.js",
+    "build:js-download": "browserify -s download src/download.js -t babelify --outfile extension/lib/download.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -31,7 +31,8 @@
 
   "permissions": [
     "activeTab",
-    "contextMenus"
+    "contextMenus",
+    "*://*.w3.org/*"
   ]
 
 }
