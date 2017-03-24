@@ -11431,13 +11431,13 @@ return factory;
 },{"_process":1,"crypto":13,"es6-promise":2,"http":13,"jsonld-request":13,"pkginfo":13,"request":13,"util":13,"xmldom":13}],15:[function(require,module,exports){
 'use strict';
 
-var _extractAndCompact = require('./extract-and-compact.js');
+var _extract = require('./extract.js');
 
-var _extractAndCompact2 = _interopRequireDefault(_extractAndCompact);
+var _extract2 = _interopRequireDefault(_extract);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _extractAndCompact2.default)('jsonld', function (err, output) {
+(0, _extract2.default)('jsonld', function (err, output) {
   var json = JSON.stringify(output, null, 2);
   // tell the popup we've got the goods
   browser.runtime.sendMessage({
@@ -11445,14 +11445,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
 });
 
-(0, _extractAndCompact2.default)('turtle', function (err, output) {
+(0, _extract2.default)('turtle', function (err, output) {
   // tell the popup we've got the goods
   browser.runtime.sendMessage({
     turtle: output
   });
 });
 
-},{"./extract-and-compact.js":16}],16:[function(require,module,exports){
+},{"./extract.js":16}],16:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

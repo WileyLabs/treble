@@ -4,7 +4,7 @@ $('.tabular.menu .item').tab();
 // WebExtension cross-border communication
 // add the downloader to the current page
 browser.tabs.executeScript(null, {
-  file: 'browser-polyfill.js'
+  file: 'lib/browser-polyfill.js'
 });
 browser.tabs.executeScript(null, {
   file: 'dist/collect.js'

@@ -1,4 +1,4 @@
-import extract from './extract-and-compact.js';
+import extract from './extract.js';
 
 extract('jsonld', (err, output) => {
   let json = JSON.stringify(output, null, 2);

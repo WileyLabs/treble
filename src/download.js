@@ -1,4 +1,4 @@
-import extract from './extract-and-compact.js';
+import extract from './extract.js';
 
 extract('jsonld', (err, output) => {
   // create a download anchor tag for downloading on click
