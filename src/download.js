@@ -1,6 +1,6 @@
-import extractAndCompact from './extract-and-compact.js';
+import extract from './extract-and-compact.js';
 
-extractAndCompact('jsonld', (err, output) => {
+extract('jsonld', (err, output) => {
   // create a download anchor tag for downloading on click
   let download = document.createElement('a');
   let ask = document.createElement('a');
