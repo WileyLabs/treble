@@ -7,7 +7,7 @@ browser.tabs.executeScript(null, {
   file: 'browser-polyfill.js'
 });
 browser.tabs.executeScript(null, {
-  file: 'lib/collect.js'
+  file: 'dist/collect.js'
 });
 
 browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {

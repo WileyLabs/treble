@@ -8,7 +8,7 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
   switch (info.menuItemId) {
     case 'download-json-ld':
       browser.tabs.executeScript(tab.id, {
-        file: 'lib/download.js'
+        file: 'dist/download.js'
       });
       break;
   }
