@@ -11464,6 +11464,16 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (as, callback) {
   switch (as) {
+    case 'refs':
+      var meta = document.querySelectorAll('meta');
+      var links = document.querySelectorAll('link[href]');
+      var anchors = document.querySelectorAll('a[href]');
+      callback(null, {
+        meta: meta,
+        links: links,
+        anchors: anchors
+      }.toString());
+      break;
     case 'turtle':
       var graph = (0, _graphRdfaProcessor2.default)(document);
       callback(null, graph.toString());

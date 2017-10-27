@@ -4,6 +4,16 @@ import getRdfaGraph from 'graph-rdfa-processor';
 // TODO: switch to Promises
 export default function(as, callback) {
   switch (as) {
+    case 'refs':
+      let meta = document.querySelectorAll('meta');
+      let links = document.querySelectorAll('link[href]');
+      let anchors = document.querySelectorAll('a[href]');
+      callback(null, {
+        meta,
+        links,
+        anchors
+      }.toString());
+      break;
     case 'turtle':
       let graph = getRdfaGraph(document);
       callback(null, graph.toString());

@@ -14,3 +14,9 @@ extract('turtle', (err, output) => {
     turtle: output
   });
 });
+
+extract('refs', (err, output) => {
+  browser.runtime.sendMessage({
+    refs: output
+  });
+});
