@@ -34,7 +34,6 @@ to run. However, if you want to contribute, you'll want to edit the `src/` fies
 
 To get started, run these commands in a console:
 ```
-$ npm i -g browserify
 $ npm i
 $ npm run build
 ```
